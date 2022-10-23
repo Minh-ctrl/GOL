@@ -59,6 +59,8 @@ while True:
             sum+= board[y][x+1]
             sum+= board[y-1][x+1]
             sum+= board[y+1][x-1]
+            # if sum > 3 delete it overpopulation
+            # if sum < 1 delete it as well
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
